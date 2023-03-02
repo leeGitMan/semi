@@ -1,0 +1,699 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vh;
+    height: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    flex-basis: 10%;
+    display: flex;
+    /* border: 3px solid black; */
+    width: 100vw;
+    position: sticky;
+    background-color: white;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+p {
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+
+.navSection{
+    flex-basis: 100%;
+    /* border: 3px solid red; */
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 1280px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: sticky;
+}
+
+
+
+/* 상단 로고 영역 */
+
+
+.home-logo{
+    display: flex;
+    flex-basis: 10%;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+#pageLogo{
+    scale: 190%;
+}
+
+
+/* 메뉴 영역 */
+
+.menuBox{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none; 
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+/* 검색바 영역 */
+
+.search{
+    flex-basis:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blueviolet */
+}
+
+#search-fieldSet{
+    border:none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search button{
+    border:none;
+    background-color: transparent;
+    scale: 150%;
+}
+
+.search input{
+    height: 30px;
+    outline: none;
+}
+
+
+#query{
+    visibility: hidden;
+    transition-duration: 1s;
+    width: 0px;
+}
+
+
+
+/* 장바구니 영역 */
+
+
+
+.cart{
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cart-button{
+    background-color: transparent;
+    border:none;
+    scale: 120%;
+}
+
+
+.cart > a:nth-child(4){
+    scale: 120%;
+}
+
+
+
+
+
+
+/* 컨텐트 영역 */
+
+.content-container{
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+}
+
+.contentInnerBox {
+    flex-basis: 85%;
+    display: flex;
+    width: 1280px;
+    /* border: 2px solid violet; */
+}
+
+
+.right{
+    flex-basis:90%;
+    height: 100%;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+.left{
+    /* border-right:  1px solid rgba(0,0,0,0.2); */
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+
+
+
+.middle-area{
+    margin-top: 55px;
+}
+
+.left > div:nth-child(1){
+    flex-basis: 2%;
+    
+    
+}
+
+.left > div:nth-child(2){
+    flex-basis: 96%;
+    
+}
+
+.left > div:nth-child(3){
+    flex-basis: 2%;
+}
+
+
+.middle-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-area > div:nth-child(1){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(1) > p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+.middle-area > div:nth-child(1) a{
+    display: flex;
+    padding-bottom: 25px;
+    
+}
+
+
+
+
+
+
+.middle-area > div:nth-child(2){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(2) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.middle-area > div:nth-child(2) a{
+    display: flex;
+    padding-bottom: 25px;
+    
+}
+
+
+
+
+.middle-area > div:nth-child(3){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(3) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.middle-area > div:nth-child(3) a{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+.middle-area > div:nth-child(4){
+    flex-basis:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-area > div:nth-child(4) p{
+    text-decoration: underline;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+
+.middle-area > div:nth-child(4) a{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+/* content 오른쪽 */
+
+
+.right{
+    flex-basis:90%;
+    height: 100%;
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+}
+
+
+.right > div:nth-child(1){
+    flex-basis:3%;
+    /* border: 1px solid blue;
+    background-color: blue; */
+}
+
+
+.right > div:nth-child(3){
+    flex-basis:3%;
+    /* border:1px solid green;
+    background-color: green; */
+}
+
+
+
+.right > div:nth-child(2){
+    flex-basis: 84%;
+    /* border: 10px solid black; */
+}
+
+/* 리뷰 작성 박스 */
+.review-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.review-content1{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid pink; */
+    align-items: center;
+}
+
+
+
+.review-content1 > div:nth-child(1){
+    display: flex;
+    width: 100%;
+    /* border: 1px solid orange; */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+.review-content1 > div:nth-child(2){
+    flex-basis: 60%;
+    
+}
+
+.review-content1 > div:nth-child(3){
+    display: flex;
+    flex-basis: 10%;
+    width: 800px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+#con-box{
+    border: 1px solid black;
+    display: flex;
+    width: 800px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+#review-img{
+    /* border:1px solid black; */
+    width: 100%;
+    height: 100%;
+    padding-top : 10px;
+}
+
+#review-imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 250px;
+    margin-left: 15px;
+}
+
+#review-imgExpalin{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-left : 30px;
+}
+
+
+
+/* 리뷰 두 번째 박스 (리뷰 작성하는 구간) */
+
+
+.review-content2 {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid magenta; */
+}
+
+
+.review-content2-1{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* border: 5px solid orange; */
+}
+
+
+
+
+.review-content2-1 > div:nth-child(1){
+    display: flex;
+    /* border: 5px solid blue; */
+    flex-basis:20%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.review-content2-1 > div:nth-child(2){
+    display: flex;
+    /* border: 5px solid blanchedalmond; */
+    flex-basis: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review-content2-1 > div:nth-child(3){
+    height: 100%;
+    width: 800px;
+    flex-basis:10%;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+
+
+
+
+.review-content2-2{
+    display: flex;
+    flex-basis: 30%;
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.review-content2-2 > div:nth-child(1){
+    display: flex;
+    flex-basis : 20%;
+    /* border: 5px solid blue; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.review-content2-2 > div:nth-child(2){
+    /* border: 5px solid greenyellow; */
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+.review-content2-3{
+    display: flex;
+    flex-direction: column;
+    /* border : 5px solid green; */
+    flex-basis: 35%;
+    margin-top: 15px;
+}
+
+
+.review-file{
+    flex-basis : 20%;
+    display: flex;
+    padding-left: 80px;
+}
+
+
+
+
+
+.review-img{
+    padding-left: 80px;
+    flex-basis: 80%;
+    display: flex;
+    /* border : 1px solid red; */
+    align-items: center;
+}
+
+#reviewImage {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(0,0,0,0.2);
+}
+
+
+
+/* 리뷰 세 번째 박스 (취소, 확인 버튼 구간) */
+
+.review-content3{
+    display: flex;
+    height: 115px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-content3 button{
+    margin-right: 50px;
+}
+
+
+
+
+
+
+/* footer 영역 */
+
+
+
+.footer{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+.footer-1{
+    display: flex;
+    flex-basis: 200px;
+    /* border: 2px solid red; */
+}
+
+
+.footer-1 div{
+    justify-content: center;
+    align-items: center;
+    /* border: 1px  solid blue; */
+}
+
+/* 풋터 첫 번째 영역 */
+
+.footer-1 div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.footer-1 div > img{
+    width: 70%;
+    justify-content: center;
+    align-items: ceneter;
+    padding-top: 10px;
+}
+
+
+/* 풋터 두 번째 영역 */
+
+
+.footer-1 div:nth-child(2){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    
+}
+
+/* 풋터 세 번째 영역 */
+
+.footer-1 div:nth-child(3){
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+
+/* 풋터 네 번째 영역 */
+
+.footer-1 div:nth-child(4){
+    
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 20px;
+}
+
+
+
+.footer-1 div:nth-child(4) > div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
+.footer-2{
+    display: flex;
+    flex-basis: 20%;
+    border: 1px solid rgba(0,0,0,0.1);
+    
+}
+
+
+.footer-2 div{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-basis: 100%
+}
+
+.footer-2 div{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left : 20px;
+}
